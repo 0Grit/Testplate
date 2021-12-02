@@ -24,18 +24,14 @@ body:
       value: "A bug happened!"
     validations:
       required: true
-  - type: dropdown
-    id: version
+  - type: input
+    id: dsdk-version
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+      label: Golioth Dsdk Commit Hash
     validations:
       required: true
   - type: dropdown
-    id: browsers
+    id: host-os
     attributes:
       label: What Host OS are you using?
       multiple: true
